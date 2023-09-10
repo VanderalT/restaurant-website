@@ -173,9 +173,12 @@ footer{
     flex-direction: column;
 }
 
-.footer-option{
+#footerNav .footer-option{
     padding: 5px;
     padding-left: 20px;
+}
+
+.footer-option{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
