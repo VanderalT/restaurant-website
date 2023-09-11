@@ -6,17 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Menu for The Huakai Restaurant">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>The Huakai - Menu</title>
 </head>
 
 <body>
 
     <nav class="nav-bar" id="navBar">
-        <a href="./menu.html" class="nav-bar-option" id="navBarMenu">Menu</a>
-        <a href="./reservations.html" class="nav-bar-option" id="navBarReservations">Reservations</a>
-        <a href="./index.html" class="nav-bar-option" id="navBarHome"><img src="./images/The-Huakai-Logo.png" id="logoNavBar" alt="The Huakai Logo"></a>
-        <a href="./contact.html" class="nav-bar-option" id="navBarContact">Contact</a>
-        <a href="./about.html" class="nav-bar-option" id="navBarAbout">About Us</a>
+        <div class="nav-bar-mobile">
+            <div class="nav-bar-mobile-header">
+                <a href="./index.html" class="nav-bar-mobile-logo" id="navBarHome"><img src="./images/The-Huakai-Logo.png" class="logo-nav-bar" alt="The Huakai Logo"><span class="accessibility-hidden">This option leads to the home page</span></a>
+                <span class="material-symbols-outlined" id="mobileNavHamburger"> Menu </span>
+            </div>
+            <div class="nav-bar-mobile-links" id="mobileMenuLinks">
+                <a href="./menu.html" class="nav-bar-option">Menu</a>
+                <a href="./reservations.html" class="nav-bar-option">Reservations</a>
+                <a href="./contact.html" class="nav-bar-option">Contact</a>
+                <a href="./about.html" class="nav-bar-option">About Us</a>
+            </div>
+        </div>
+        <div class="nav-bar-desktop">
+            <a href="./menu.html" class="nav-bar-option" id="navBarMenu">Menu</a>
+            <a href="./reservations.html" class="nav-bar-option" id="navBarReservations">Reservations</a>
+            <a href="./index.html" class="nav-bar-option" id="navBarHome"><img src="./images/The-Huakai-Logo.png" id="logoNavBar" alt="The Huakai Logo"><span class="accessibility-hidden">This option leads to the home page</span></a>
+            <a href="./contact.html" class="nav-bar-option" id="navBarContact">Contact</a>
+            <a href="./about.html" class="nav-bar-option" id="navBarAbout">About Us</a>
+        </div>
     </nav>
 
     <header class="pages-header">
@@ -24,163 +39,245 @@
     </header>
 
     <main>
-        <div class="content-columns">
-            <div class="content-left">
+        <div class="content-rows">
+            <div class="content-columns">
                 <div class="menu-column">
-                    <h2>Appetizers</h2>
+                    <h2 class="menu-type-title">Appetizers</h2>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Rewena Bread</h3>
-                        <h4 class="menu-item-price">10</h4>
+                        <h3 class="menu-item-title">Rewena Bread - 10</h3>
                         <p class="menu-item-decription">Traditional Māori bread.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Paua Fritter</h3>
-                        <h4 class="menu-item-price">16</h4>
+                        <h3 class="menu-item-title">Paua Fritter - 16</h3>
                         <p class="menu-item-decription">Finely diced pieces of paua, served with a side salad and horopito dressing.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Raw Fish</h3>
-                        <h4 class="menu-item-price">20</h4>
+                        <h3 class="menu-item-title">Raw Fish - 20</h3>
                         <p class="menu-item-decription">Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Poached Salmon</h3>
-                        <h4 class="menu-item-price">22</h4>
+                        <h3 class="menu-item-title">Poached Salmon - 22</h3>
                         <p class="menu-item-decription">Salmon poached in an orange and pistachio glaze, served with rewena bread.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Seafood Basket</h3>
-                        <h4 class="menu-item-price">25</h4>
+                        <h3 class="menu-item-title">Seafood Basket - 25</h3>
                         <p class="menu-item-decription">Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</p>
                     </div>
                 </div>
             </div>
-            <div class="content-right">
+            <div class="content-columns">
                 <div class="menu-column">
-                    <img src="./images/Another-View-From-The-Huakai.jpg" alt="">
+                    <img class="image-content" src="./images/menu-images/salad.jpg" alt="Image of Appetizers">
                 </div>
             </div>
-            <div class="content-left">
+        </div>
+        <div class="content-rows-reverse">
+            <div class="content-columns">
                 <div class="menu-column">
-                    <img src="./images/Another-View-From-The-Huakai.jpg"/>
-                </div>
-            </div>
-            <div class="content-right">
-                <div class="menu-column">
-                    <h2>Main</h2>
+                    <h2 class="menu-type-title">Main</h2>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Fish Of The Day</h3>
-                        <h4 class="menu-item-price">25</h4>
+                        <h3 class="menu-item-title">Fish Of The Day - 25</h3>
                         <p class="menu-item-decription">Beer-battered fish and kumara fries, served with a side salad and homemade tartare.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Mussels and Scallops</h3>
-                        <h4 class="menu-item-price">25</h4>
+                        <h3 class="menu-item-title">Mussels and Scallops - 25</h3>
                         <p class="menu-item-decription">Steamed mussel & scallop mousse, honey and soy broth.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Seafood Chowder</h3>
-                        <h4 class="menu-item-price">30</h4>
+                        <h3 class="menu-item-title">Seafood Chowder - 30</h3>
                         <p class="menu-item-decription">Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Pork Belly</h3>
-                        <h4 class="menu-item-price">30</h4>
+                        <h3 class="menu-item-title">Pork Belly - 30</h3>
                         <p class="menu-item-decription">Slow-cooked pork belly served on a bed of apple slaw with roasted kumara and crispy noodles.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Lamb Steak</h3>
-                        <h4 class="menu-item-price">33</h4>
+                        <h3 class="menu-item-title">Lamb Steak - 33</h3>
                         <p class="menu-item-decription">New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed carrots, roasted butternut squash and mushroom jus.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Venison</h3>
-                        <h4 class="menu-item-price">33</h4>
+                        <h3 class="menu-item-title">Venison - 33</h3>
                         <p class="menu-item-decription">Venison crusted with Horopito, served with glazed plums, cabbage salad and red wine jus.</p>
                     </div>
                 </div>
             </div>
-            <div class="content-left">
+            <div class="content-columns">
                 <div class="menu-column">
-                    <h2>Dessert</h2>
+                    <img class="image-content" src="./images/menu-images/lots-of-food-too.jpg" alt="Image of Mains"/>
+                </div>
+            </div>
+        </div>
+        <div class="content-rows">
+            <div class="content-columns">
+                <div class="menu-column">
+                    <h2 class="menu-type-title">Dessert</h2>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Kapati Ice Cream</h3>
-                        <h4 class="menu-item-price">10</h4>
+                        <h3 class="menu-item-title">Kapati Ice Cream - 10</h3>
                         <p class="menu-item-decription">Check for daily specials.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Steamed Pudding</h3>
-                        <h4 class="menu-item-price">12</h4>
+                        <h3 class="menu-item-title">Steamed Pudding - 12</h3>
                         <p class="menu-item-decription">Golden-syrup-flavoured steamed pudding, served with vanilla ice cream.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Mini Pavlova</h3>
-                        <h4 class="menu-item-price">16</h4>
+                        <h3 class="menu-item-title">Mini Pavlova - 16</h3>
                         <p class="menu-item-decription">Mini pavlova, served with kawakawa and lemon-infused cream and fresh fruit.</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="menu-item-title">Banoffee Pie</h3>
-                        <h4 class="menu-item-price">16</h4>
+                        <h3 class="menu-item-title">Banoffee Pie - 16</h3>
                         <p class="menu-item-decription">Toffee, fresh bananas and fresh cream.</p>
                     </div>
                 </div>
             </div>
-            <div class="content-right">
+            <div class="content-columns">
                 <div class="menu-column">
-                    <img src="./images/Another-View-From-The-Huakai.jpg" alt="">
+                    <img class="image-content" src="./images/menu-images/dessert.jpg" alt="Image of a dessert">
                 </div>
             </div>
-            <div class="content-centered">
-                <div class="menu-column">
-                    <h2>Beverages</h2>
-                    <div class="menu-drinks-left">
-                        <div class="menu-drinks-type">
+        </div>
+        <div class="content-centered">
+            <h2 class="menu-type-title">Beverages</h2>
+            <div class="menu-drink-rows">
+                <div class="menu-drinks-left">
+                    <div class="menu-drinks-type">
+                        <div class="menu-drinks-title">
                             <h3>Red</h3>
+                            <h3>B/G</h3>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Terrace Edge Pinot Noir, 2012, Wairarapa</p>
+                            <p>53/13</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Altitude Pinot Noir, 2010, Marlborough</p>
+                            <p>64/15</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Greystone Pinot Noir, 2012, Wairarapa</p>
+                            <p>73/17</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Terrace Edge, Syrah, 2012, Wairarapa</p>
+                            <p>53/13</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Altitude Syrah, 2010, Marlborough</p>
+                            <p>64/15</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Greystone Syrah, 2012, Wairarapa</p>
+                            <p>73/17</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Pegasus Bay Merlot, 2013, Waipara</p>
+                            <p>65/14</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Pegasus Bay Pinot Noir, 2013, Waipara</p>
+                            <p>110</p>
                         </div>
-                        <div class="menu-drinks-type">
+                    </div>
+                    <div class="menu-drinks-type">
+                        <div class="menu-drinks-title">
                             <h3>White</h3>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Spade Oak Pinot Gris, 2011, Gisborne</p>
+                            <p>40/10</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Maude Pinot Gris, 2017, Otago</p>
+                            <p>49.50/11</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Charles Wiffen Chardonnay, 2013, Otago</p>
+                            <p>48/11</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Amisfield, Riesling, 2016, Otago</p>
+                            <p>53/12</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Lamont Riesling, 2010, Otago</p>
+                            <p>57/13</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Elephant Hill Viognier, 2013, Hawkes Bay</p>
+                            <p>55/12</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Folium Sauvignon Blanc, 2011, Marlborough</p>
+                            <p>52/11</p>
+                        </div>
+                        <div class="menu-drinks-item">
                             <p>Billecart-Salmon Brut Reserve, France</p>
+                            <p>120</p>
                         </div>
                     </div>
-                    <div class="menu-drinks-right">
-                        <div class="menu-drinks-type">
+                </div>
+                <div class="menu-drinks-right">
+                    <div class="menu-drinks-type">
+                        <div class="menu-drinks-title">
                             <h3>Beer and Cider</h3>
-                            <p>Garage project range</p>
-                            <p>Tuatara range</p>
-                            <p>Panhead range</p>
-                            <p>Coopers ale</p>
-                            <p>Heineken</p>
-                            <p>Moa cider</p>
-                            <p>Crooked cider</p>
                         </div>
-                        <div class="menu-drinks-type">
-                            <h3>Non-alcoholic</h3>
-                            <p>Mineral water</p>
-                            <p>Soft drinks</p>
-                            <p>Juice</p>
-                            <p>Coffee</p>
-                            <p>Tea</p>
+                        <div class="menu-drinks-item">
+                            <p>Garage project range</p>
+                            <p>11</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Tuatara range</p>
+                            <p>11</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Panhead range</p>
+                            <p>10</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Coopers ale</p>
+                            <p>10</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Heineken</p>
+                            <p>11</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Moa cider</p>
+                            <p>10</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Crooked cider</p>
+                            <p>10</p>
                         </div>
                     </div>
-                    <a href="./files/Menu.pdf" class="reservationButton" id="reservationButton" download>Download Menu</a>
-                    <a href="./reservations.html" class="reservationButton" id="reservationButton">Book Now</a>
+                    <div class="menu-drinks-type">
+                        <div class="menu-drinks-title">
+                            <h3>Non-alcoholic</h3>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Mineral water</p>
+                            <p>4</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Soft drinks</p>
+                            <p>4</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Juice</p>
+                            <p>4</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Juice</p>
+                            <p>4.5</p>
+                        </div>
+                        <div class="menu-drinks-item">
+                            <p>Tea</p>
+                            <p>3.5</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <a href="./files/Menu.pdf" class="reservationButton" id="reservationButton" download>Download Menu</a>
+            <a href="./reservations.html" class="reservationButton" id="reservationButton">Book Now</a>
         </div>
     </main>
 
@@ -213,6 +310,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 
 </body>
 

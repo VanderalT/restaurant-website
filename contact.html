@@ -6,16 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact page for The Huakai Restaurant">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>The Huakai - Contact</title>
 </head>
 
 <body>
+    
     <nav class="nav-bar" id="navBar">
-        <a href="./menu.html" class="nav-bar-option" id="navBarMenu">Menu</a>
-        <a href="./reservations.html" class="nav-bar-option" id="navBarReservations">Reservations</a>
-        <a href="./index.html" class="nav-bar-option" id="navBarHome"><img src="./images/The-Huakai-Logo.png" id="logoNavBar" alt="The Huakai Logo"></a>
-        <a href="./contact.html" class="nav-bar-option" id="navBarContact">Contact</a>
-        <a href="./about.html" class="nav-bar-option" id="navBarAbout">About Us</a>
+        <div class="nav-bar-mobile">
+            <div class="nav-bar-mobile-header">
+                <a href="./index.html" class="nav-bar-mobile-logo" id="navBarHome"><img src="./images/The-Huakai-Logo.png" class="logo-nav-bar" alt="The Huakai Logo"><span class="accessibility-hidden">This option leads to the home page</span></a>
+                <span class="material-symbols-outlined" id="mobileNavHamburger"> Menu </span>
+            </div>
+            <div class="nav-bar-mobile-links" id="mobileMenuLinks">
+                <a href="./menu.html" class="nav-bar-option">Menu</a>
+                <a href="./reservations.html" class="nav-bar-option">Reservations</a>
+                <a href="./contact.html" class="nav-bar-option">Contact</a>
+                <a href="./about.html" class="nav-bar-option">About Us</a>
+            </div>
+        </div>
+        <div class="nav-bar-desktop">
+            <a href="./menu.html" class="nav-bar-option" id="navBarMenu">Menu</a>
+            <a href="./reservations.html" class="nav-bar-option" id="navBarReservations">Reservations</a>
+            <a href="./index.html" class="nav-bar-option" id="navBarHome"><img src="./images/The-Huakai-Logo.png" id="logoNavBar" alt="The Huakai Logo"><span class="accessibility-hidden">This option leads to the home page</span></a>
+            <a href="./contact.html" class="nav-bar-option" id="navBarContact">Contact</a>
+            <a href="./about.html" class="nav-bar-option" id="navBarAbout">About Us</a>
+        </div>
     </nav>
 
     <header class="pages-header">
@@ -23,16 +39,18 @@
     </header>
     
     <main>
-        <div class="content-columns">
-            <div class="content-left">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDSKrt0gxsJY_KG7qRjdcxIkFpuCqQg0njdGSjWDgpXHWcVg/viewform?embedded=true" class="contact-us-content" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="content-rows">
+            <div class="content-columns">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDSKrt0gxsJY_KG7qRjdcxIkFpuCqQg0njdGSjWDgpXHWcVg/viewform?embedded=true" class="contact-us-form" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
-            <div class="content-right">
-                <h2>Contact Number:</h2>
-                <p>09 401 4019</p>
-                <h2>Address:</h2>
-                <p>1 Island Street Kerikeri, Bay of Islands, New Zealand</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d814.7720667853994!2d173.9488345!3d-35.2291727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1694388624500!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="content-columns">
+                <div class="contact-content">
+                    <h2>Contact Number:</h2>
+                    <p>09 401 4019</p>
+                    <h2>Address:</h2>
+                    <p>1 Island Street Kerikeri, Bay of Islands, New Zealand</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d814.7720667853994!2d173.9488345!3d-35.2291727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1694388624500!5m2!1sen!2snz" class="contact-us-map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
         
@@ -67,6 +85,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
     
 </body>
 

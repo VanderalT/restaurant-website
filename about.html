@@ -6,16 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About page for The Huakai Restaurant">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>The Huakai - About Us</title>
 </head>
 
 <body>
+    
     <nav class="nav-bar" id="navBar">
-        <a href="./menu.html" class="nav-bar-option" id="navBarMenu">Menu</a>
-        <a href="./reservations.html" class="nav-bar-option" id="navBarReservations">Reservations</a>
-        <a href="./index.html" class="nav-bar-option" id="navBarHome"><img src="./images/The-Huakai-Logo.png" id="logoNavBar" alt="The Huakai Logo"></a>
-        <a href="./contact.html" class="nav-bar-option" id="navBarContact">Contact</a>
-        <a href="./about.html" class="nav-bar-option" id="navBarAbout">About Us</a>
+        <div class="nav-bar-mobile">
+            <div class="nav-bar-mobile-header">
+                <a href="./index.html" class="nav-bar-mobile-logo" id="navBarHome"><img src="./images/The-Huakai-Logo.png" class="logo-nav-bar" alt="The Huakai Logo"><span class="accessibility-hidden">This option leads to the home page</span></a>
+                <span class="material-symbols-outlined" id="mobileNavHamburger"> Menu </span>
+            </div>
+            <div class="nav-bar-mobile-links" id="mobileMenuLinks">
+                <a href="./menu.html" class="nav-bar-option">Menu</a>
+                <a href="./reservations.html" class="nav-bar-option">Reservations</a>
+                <a href="./contact.html" class="nav-bar-option">Contact</a>
+                <a href="./about.html" class="nav-bar-option">About Us</a>
+            </div>
+        </div>
+        <div class="nav-bar-desktop">
+            <a href="./menu.html" class="nav-bar-option" id="navBarMenu">Menu</a>
+            <a href="./reservations.html" class="nav-bar-option" id="navBarReservations">Reservations</a>
+            <a href="./index.html" class="nav-bar-option" id="navBarHome"><img src="./images/The-Huakai-Logo.png" id="logoNavBar" alt="The Huakai Logo"><span class="accessibility-hidden">This option leads to the home page</span></a>
+            <a href="./contact.html" class="nav-bar-option" id="navBarContact">Contact</a>
+            <a href="./about.html" class="nav-bar-option" id="navBarAbout">About Us</a>
+        </div>
     </nav>
 
     <header class="pages-header">
@@ -23,19 +39,23 @@
     </header>
     
     <main>
-        <div class="content-columns">
-            <div class="content-left">
-                <p>Welcome to Haukai Restaurant, where the rich and flavorful traditions of Māori kai come to life amidst the breathtaking beauty of the Bay of Islands.<br/>
-                    <br/>
-                    Haukai, which means "food" in Te Reo Māori, is not just a restaurant; it's a labor of love.<br/>
-                    <br/>
-                    The owners have envisioned Haukai as a place where visitors can taste the essence of Māori culture, experience the warmth of whānau (family), and connect with the land.<br/> 
-                    <br/>
-                    They have poured their hearts into creating an authentic and immersive dining experience that showcases the diversity and depth of Māori kai.
-                    Our journey begins with the passionate vision and dedication of our owners, a team deeply connected to the land, culture, and cuisine of Aotearoa.</p>
+        <div class="content-rows">
+            <div class="content-columns">
+                <div class="about-content">
+                    <p>
+                        Welcome to Haukai Restaurant, where the rich and flavorful traditions of Māori kai come to life amidst the breathtaking beauty of the Bay of Islands.<br/>
+                        <br/>
+                        Haukai, which means "food" in Te Reo Māori, is not just a restaurant; it's a labor of love.<br/>
+                        <br/>
+                        The owners have envisioned Haukai as a place where visitors can taste the essence of Māori culture, experience the warmth of whānau (family), and connect with the land.<br/> 
+                        <br/>
+                        They have poured their hearts into creating an authentic and immersive dining experience that showcases the diversity and depth of Māori kai.
+                        Our journey begins with the passionate vision and dedication of our owners, a team deeply connected to the land, culture, and cuisine of Aotearoa.
+                    </p>
+                </div>
             </div>
-            <div class="content-right">
-                <img src="./images/The-Huakai-Logo.png" alt="The Huakai Logo">
+            <div class="content-columns">
+                    <img class="image-content" src="./images/menu-images/plate-with-cutlery.jpg" alt="The Huakai Logo">
             </div>
         </div>
     </main>
@@ -69,6 +89,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
     
 </body>
 
