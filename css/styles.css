@@ -50,8 +50,8 @@ a{
     border-bottom: solid 0.25vh #634b45;
 }
     #navBar .nav-bar-option{
-        min-width: 200px;
-        min-height: 100px;
+        min-width: 15vw;
+        min-height: 14.75vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -69,8 +69,6 @@ a{
     }
 
 #logoNavBar{
-    height: 100px;
-    width: auto;
     margin-bottom: 5px;
 }
 
@@ -89,7 +87,7 @@ a{
 #reservationButton{
     text-decoration: none;
     color: #634b45;
-    max-width: 200px;
+    max-width: 20vw;
     margin: 50px;
     padding: 20px;
     border-radius: 20px;
@@ -139,8 +137,6 @@ a{
 
 .image-content{
     object-fit: cover;
-    width: 500px;
-    height: 500px;
 }
 
 footer{
@@ -173,10 +169,6 @@ footer{
 
 .footer-information a{
     font-size: 1rem;
-}
-
-#footerLogo{
-    max-height: 100px;
 }
 
 #footerNav{
@@ -212,14 +204,8 @@ footer{
 }
 
 #heroImage{
-    width: 100vw;
     object-fit: cover;
     overflow:hidden;
-}
-
-#headerLogo{
-    height: 200px;
-    width: 200px;
 }
 
 #heroDescription{
@@ -420,8 +406,6 @@ footer{
     }
 
     #navBar .nav-bar-mobile-logo{
-        width:auto;
-        height: auto;
         margin: 5px;
     }
 
@@ -432,7 +416,7 @@ footer{
     }
 
     #navBar .logo-nav-bar{
-        width: 75px;
+        margin-bottom: 5px;
     }
 
 
@@ -457,12 +441,6 @@ footer{
         right: 0;
         top: 0;
         }
-    
-    #logoNavBar{
-        height: 100px;
-        width: auto;
-        margin-bottom: 5px;
-    }
 
     /* Content */
 
