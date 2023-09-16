@@ -83,8 +83,7 @@ a{
     padding-bottom: 20px;
 }
 
-
-#reservationButton{
+.action-button{
     text-decoration: none;
     color: #634b45;
     max-width: 20vw;
@@ -94,12 +93,12 @@ a{
     border: solid 2px #634b45;
 }
 
-    #reservationButton:hover {
-        background-color: #7dc2c8;
-        color: white;
-        text-decoration: none;
-        transition: ease-in-out 0.5s;
-    }
+.action-button:hover{
+    background-color: #7dc2c8;
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+}
 
 .content-rows{
     max-width: 100vw;
